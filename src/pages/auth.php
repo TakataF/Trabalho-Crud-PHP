@@ -17,7 +17,7 @@
 
         if ($row > 0) {
             $_SESSION['login'] = $login;
-            $_SESSION['passwrd'] = $senha;
+            $_SESSION['passwrd'] = $passwrd;
             header('location:../../index.php');
         } else {
             unset($_SESSION['login']);
