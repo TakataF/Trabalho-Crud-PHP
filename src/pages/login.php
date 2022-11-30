@@ -26,16 +26,22 @@
 
     <!----------------------------------------->
     
-    <form action="auth.php" method="post">
-        <label for="login">Login:</label>
-        <input required type="text" maxlength="15" name="login">
+    <form id="formlogin" action="auth.php" method="post">
+        <div class="d-flex justify-content-center">
+            <label id="loginlabel" for="login">Login:</label>
+            <input required type="text" maxlength="15" name="login">
+        </div>
         <br>
-        <label for="passwrd">Password:</label>
-        <input required type="password" name="passwrd">
+        <div class="d-flex justify-content-center">
+            <label id="password" for="passwrd">Password:</label>
+            <input required type="password" name="passwrd">
+        </div>
         <br>
-        <input class="btn btn-warning" type="submit" value="Login" name="submit">
+        <div class="d-flex justify-content-center">
+        <input  class="btn btn-warning" type="submit" value="Login" name="submit">
+        </div>
         <br>
-        <span>Não tem conta? <a href="newUser.php">Cadastre-se</a></span>
+        <span class="d-flex justify-content-center">Não tem conta? <a href="newUser.php">Cadastre-se</a></span>
     </form>
 
     <!----------------------------------------->
