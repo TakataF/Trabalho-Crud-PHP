@@ -43,14 +43,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- <link href="../css/newuser.css" rel="stylesheet"> -->
+    <link href="../css/addproduct.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <span> <?php echo "Bem vindo $logado"; ?> </span>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h3 class="navbar-brand"><?php echo "Bem vindo $logado"?></h3>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="src/pages/logout.php">Logout</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Trabalho-Crud-PHP/index.php">Voltar ao Inicio</a>
+            </li>
+        </ul>
+    </div>
     </nav>
 
     <!---------------------------------------------------->
