@@ -41,7 +41,7 @@
         <input  class="btn btn-warning" type="submit" value="Login" name="submit">
         </div>
         <br>
-        <span class="d-flex justify-content-center">Não tem conta? <a href="newUser.php">Cadastre-se</a></span>
+        <span class="d-flex justify-content-center">Não tem conta? <a href="addUser.php">Cadastre-se</a></span>
     </form>
 
     <!----------------------------------------->

@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require('db/DBConnection.php');
 
     if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['passwrd']) == true)){
         header('location:src/pages/login.php');
@@ -25,5 +26,22 @@
     <p>
         <a href="src/pages/logout.php">Logout</a>
     </p>
+
+    <p>
+        <a href="src/pages/addProduct.php">Cadastrar Produto</a>
+    </p>
+
+    <div>
+        <?php
+            $instance = DBConnection::getInstance();
+            $conn = $instance->getConnection();
+
+            $result = $conn->query("SELECT * FROM product");
+
+            foreach ($result->fetchAll(PDO::FETCH_ASSOC) as $row => $value) {
+                echo $value['id'] . " - " . $value['name'] . " - " . $value['description'] . " - " . $value['qtd_avaliable'] . " - " . $value['unit_price'] . " <br> ";
+            }
+        ?>
+    </div>
 </body>
 </html>

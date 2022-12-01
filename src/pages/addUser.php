@@ -40,7 +40,7 @@
 
     <!---------------------------------------------------->
 
-    <form action="newUser.php" method="post">
+    <form action="addUser.php" method="post">
         <div class="d-flex justify-content-center">
             <label id="loginlabel" for="login">Login:</label>
             <input type="text" maxlength="15" name="login">
