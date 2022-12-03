@@ -43,5 +43,9 @@ function changeProduct(elemento){
 function includeEvents(elemento){
     elemento.setAttribute("contenteditable", "true");
     //elemento.setAttribute("onblur", "changeProduct(this)");
-    $('#btnSave').attr('hidden', false);
+    var rowID = elemento.parentElement.children[0].innerHTML;
+    var elementBtnSave = `#btnSave${rowID}`;
+    elementBtnSave.trim();
+    console.log(elementBtnSave);
+    $(elementBtnSave).attr('hidden', false);
 }

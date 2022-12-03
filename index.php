@@ -61,7 +61,7 @@
                     
                 ?>
                     <tr id="row<?php echo $value['id'];?>">
-                        <th scope="row"> <?php echo $value['id'];?> </th>
+                        <th scope="row"><?php echo $value['id'];?></th>
                         <td ondblclick="includeEvents(this)"> <?php echo $value['name'];?> </td>
                         <td ondblclick="includeEvents(this)"> <?php echo $value['description'];?> </td>
                         <td ondblclick="includeEvents(this)"> <?php echo $value['qtd_avaliable'];?> </td>
@@ -70,7 +70,7 @@
                             <button onClick="deleteProduct(<?php echo $value['id'];?>)" class="btn btn-danger">
                                 <i class="bi bi-trash"></i>
                             </button>
-                            <button id="btnSave" hidden onclick="changeProduct(this.parentElement.parentElement)" class="btn btn-success">
+                            <button id="btnSave<?php echo $value['id'];?>" hidden onclick="changeProduct(this.parentElement.parentElement)" class="btn btn-success">
                                 <i class="bi bi-save"></i>
                             </button>
                         </td>
